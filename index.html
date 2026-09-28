@@ -1,24 +1,50 @@
-<html>
+<!DOCTYPE html> 
+<html lang="en">
     <head>
+       <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
     </head>
     <body>
+        <header>
+            <div class="header-content">
+                <div class="logo">        
     
-        <img src="images/logo.png" alt="logo" width="100">
+    <img src="images/logo.png" alt="logo" width="100">
+    </div>
+
+    <h1>My Portfolio</h1>
+
+    <div class="nav-bar">   
     <nav>
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#education">Education</a></li>
         </ul>
     </nav>
+    </div>
+
+    <div class="search-form">   
+   
+
     <form>
         <input type="text" placeholder="Search">
         <button type="submit">Search</button>
     </form>
-        <header>
-            <h1>About Me</h1>
+     </div>
+     </div> 
+    </header>
+
+    <main>
+
+        <section id="about">
+            <div class="about-container">
+    
+            <h2>About Me</h2>
             <img src="images/Sejal.jpeg" alt="profile" width="120">
             <p>
                 Hello! I'm Sejal Sherpa, an IT student who enjoys learning about
@@ -28,49 +54,151 @@
                 development skills. I believe that regular practice and learning
                 from new experiences can help me become better in the IT field.
             </p>
-            <h1>My Skills</h1>
+            </div>
+        </section>
+
+        
+        <section id="skills">
+            <div class="skills-container">
+            <h2>My Skills</h2>
             <p>
                 I have basic knowledge of different technical and creative tools.
-                My skills include <b>HTML, CSS, C, C++, MS Word, Excel, and Canva</b>.
-                I am also learning about AWS and cloud computing. Along with
-                technical skills, I am interested in improving my creativity,
-                communication, and problem-solving abilities through my studies
-                and practical activities.
+                I am also learning about AWS and cloud computing. 
             </p>
-            <h1>My Projects</h1>
+
+            <dl>
+
+                    <dt><b>HTML</b></dt>
+                    <dd>Basic knowledge of creating and structuring web pages.</dd>
+
+                    <dt><b>CSS</b></dt>
+                    <dd>Basic knowledge of styling and designing web pages.</dd>
+
+                    <dt><b>C</b></dt>
+                    <dd>Basic programming and problem-solving skills.</dd>
+
+                    <dt><b>C++</b></dt>
+                    <dd>Basic programming and object-oriented programming skills.</dd>
+
+                    <dt><b>MS Word</b></dt>
+                    <dd>Basic document creation and formatting skills.</dd>
+
+                    <dt><b>Excel</b></dt>
+                    <dd>Basic spreadsheet and data management skills.</dd>
+
+                    <dt><b>Canva</b></dt>
+                    <dd>Basic knowledge of creating simple visual designs.</dd>
+
+                    <dt><b>AWS</b></dt>
+                    <dd>Basic knowledge of AWS and cloud computing.</dd>
+
+                </dl>
+            </div>
+        </section>
+        <section id="projects">
+    <div class="projects-container">
+        <h2>My Projects</h2>
+
+        <article>
+            <h3>Student Management System</h3>
             <p>
-                During my studies, I have worked on different projects to
-                understand how programming and technology are used in real
-                situations. Some of my projects include a <b>Student Management
-                System</b>, a personal portfolio website, and an
-                <b>AWS S3 static website hosting project</b>. These projects
-                have helped me practice programming, website development, and
-                cloud-related concepts.
+                I worked on a Student Management System during my studies.
+                This project helped me practice programming, problem-solving,
+                and managing student records.
             </p>
-            <h1>Contact me</h1>
+        </article>
+
+        <article>
+            <h3>AWS S3 Static Website Hosting</h3>
             <p>
-                I enjoy connecting with people who are interested in technology
-                and learning new things. If you would like to discuss a project,
-                share an idea, or connect with me, you can contact me using the
-                form below. I am always interested in learning and exploring
-                new opportunities.           
-            <form>
-                <label><b>Full Name</b></label><br>
-                <input type="text" placeholder="Name"><br>
-                <label><b>Email</b></label><br>
-                <input type="text" placeholder="Email"><br>
-                <label><b>Project</b></label><br>
-                <input type="text" placeholder="Project"><br>
-                <label><b>Message</b></label><br>
-                <textarea placeholder="Would you like to say something?"></textarea><br>
-                <br><button type="submit">Submit</button>
-            </form>
+                I created a static website and hosted it using Amazon S3.
+                This project helped me understand cloud storage, bucket
+                configuration, permissions, and static website hosting.
             </p>
-        <h1>Follow Me On</h1>
-        </header>
+        </article>
+    </div>
+</section>
+        <section id="contact">
+
+    <div class="contact-container">
+
+        <h2>Contact me</h2>
+
+        <p>
+            I enjoy connecting with people who are interested in technology
+            and learning new things. If you would like to discuss a project,
+            share an idea, or connect with me, you can contact me using the
+            form below. I am always interested in learning and exploring
+            new opportunities.
+        </p>
+
+        <form>
+
+            <label for="name"><b>Full Name</b></label><br>
+            <input type="text" id="name" name="name" placeholder="Name"><br>
+
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+
+            <label for="project"><b>Project</b></label><br>
+            <input type="text" id="project" name="project" placeholder="Project"><br>
+
+            <label for="message"><b>Message</b></label><br>
+            <textarea id="message" name="message" placeholder="Would you like to say something?"></textarea><br>
+
+            <br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+</section>
+        <section id="education">
+            <div class="education-container">
+
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>S.N. </th>
+                        <th>Level</th>
+                        <th>Institution</th>
+                        <th>Compilation Date</th>
+                        <th>GPA</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Secondary</td>
+                        <td>LA</td>
+                        <td>2015</td>
+                        <td>3.8</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Higher Secondary</td>
+                        <td>KMC</td>
+                        <td>2017</td>
+                        <td>3.6</td>
+                        <td>A</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            </div>
+        </section>
+        </main> 
+
+                
+        <h2>Follow Me On</h2>
         <footer>
-            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin logo.png" alt="linkedin" width="50"></a>
-             <a href="https://www.instagram.com" target="_blank"><img src="images/instagram logo.jpg" alt="instagram" width="50"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin" width="50"></a>
+             <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-logo.jpg" alt="instagram" width="50"></a>
 
         </footer>
 </html>
